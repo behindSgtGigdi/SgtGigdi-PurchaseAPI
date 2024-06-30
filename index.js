@@ -325,7 +325,6 @@ var test = "true";
 if(test == "true"){
 // below not only checks if the user is real but it checks if they have user added
 var util = require('util'),
-return;
 exec = require('child_process').exec,
 child;
 child = exec('node api-src/vrchatapi/checkuser.js -next ' + userid, // command line argument directly in string
