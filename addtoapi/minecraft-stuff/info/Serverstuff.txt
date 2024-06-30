@@ -1,0 +1,2 @@
+We want the person to install a "Setup" that installs java, minecraft launcher, the russion java and once all that is installed runs a main program that does whatever and then grabs the latest servers.dat
+from the API and changes it to fit the server located on https://replit-minecraft-server.sgtgigdi1loligt.repl.co and then launches the main window so that once the user gets on it shows the server.

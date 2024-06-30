@@ -1,0 +1,1 @@
+The template.html file is the template for sending emails after purchases

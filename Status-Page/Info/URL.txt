@@ -1,0 +1,6 @@
+Status bot ENV and password settings
+rar password:4aumaaid
+Secret env variable info below
+
+secret=NoTnyF6fYSW8Vs5DdCpG9YnTD
+currenturl=*url with no /*

@@ -1,0 +1,9 @@
+When someone buys the currency it needs to verify the request is coming from the directed hostname being for example https://sgtgigdilauncher-payprocessor.herokuapp.com because if its not then anybody
+on any IP can just send a request and it will go through
+CODE:
+var host = req.headers.host;
+var origin = req.headers.origin;
+var origin2 = req.headers.referer;
+console.log(ip);
+console.log(host);
+console.log(origin);

@@ -1,0 +1,52 @@
+okay so here is the ideas
+First and foremost I am so proud of you aidan even though absolutely nobody is going to buy this
+But its still fun.
+
+12/13/2021
+
+So here is the idea.
+
+Instead of using the "User ID" in the params we use the token because they can just change their user token to something else resulting in a "Succsessful status code" or worse change it
+to somebody elses ID which can be obtained easily and spend their own GigdiBucks. but yeah have the token get sent to the server and have the server get the user ID from the token
+also instead of giving the "current" amount param you can get that by making a request to find what that is and subtracting the amount due in the next slot. So basically before it makes 
+the purchase its going to request the read only params on that account and grab gigdibucks value and subtract it from the amount due and sent the new result over. also finally instead of 
+the amount due thingy change that so that the server goes through a list in a new file and according the the "item" param it will find the price for that and yeah so the full idea is
+you give a token (login) and an item and it will use ur token to get ur user ID and using the user ID it will grab your amount of currency and it will find the price of the item you want
+subtract the current amount with the price and set the ready only attribute to the new value. Also add more error messages and things like that.
+
+Thats really all I got for you goodluck make a gigdibucks picture delete the Economy discord server and goodbye.
+
+-SgtGigdiTeam
+
+12/13/2021
+
+yeah so xsolla is dumb and decided to 
+[
+  {
+    "key": "GigdiBucks",
+    "permission": "private",
+    "value": "1029234"
+  }
+]
+where there are two lines leading to the values therefor not allowing you to phrase hopefully you can fix or something
+12/13/2021
+
+
+Please update the homepage and other information on the status page
+12/20/21
+
+I just added email sendings after purchases using the herokuapp to send.
+12/29/21
+
+I added and cleaned up a lot mainly focusing on variables and fixing them up
+1/5/22
+
+Make a extension to the api where if it is recieved then it checks if a key is correct from php website using params and if it is check the amount of gigdi bucks and set it as a var or const once do that send a request to get the current amount on the user account and add the amount purchases to the current amount and set that value as the new value sent to the server once that is all done send webhooks and other stuff such as the email
+All I added today was a few fixes and a package that gets ADMIN TOKEN since they removed the original code on xsolla as well as did a lot of testing
+1/6/22
+
+Added a login webhook feature to send webhooks and emails to users who log in
+thats literally it as well as a new template
+1/6/22
+
+One the purchase website/store website for xsolla make it so that when they click one of the options it goes to a login page depending on the amount of example login/1000 will once logged in grab the token and get the user ID which will be set on the buy button which they can click make their purchase and once it completes on the php page it will add the amount.

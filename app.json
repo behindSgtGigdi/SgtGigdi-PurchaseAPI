@@ -1,0 +1,92 @@
+{
+  "name": "sgtgigdilauncher-purhcaseapi",
+  "website": "https://discord.gg/Ymrz34NJSH",
+  "description": "SgtGigdi API is a server that handles all purchase requests!",
+  "repository": "https://github.com/SgtGigdi/SgtGigdi-Purchase-API",
+  "logo": "https://cdn.discordapp.com/attachments/831575267902357525/833862330441138176/unnamed.jpg",
+  "keywords": [
+    "SgtGigdi-Launcher"
+  ],
+  "success_url": "/welcome-to-api",
+  "env": {
+    "email": {
+      "description": "This determines whether you send emails after purchases or not (true or false)",
+      "value": ""
+    },
+    "ERROR_PAGE_URL": {
+      "description": "If your API has an error this will be the page that displays",
+      "value": ""
+    },
+    "giftcardsecret": {
+      "description": "Your gift card secret. In order for gift card purchases to work make sure this is the same as the secret env in the repl",
+      "value": ""
+    },
+    "MAINTENANCE_PAGE_URL": {
+      "description": "If your API has been set to maintenance this will be the page that displays",
+      "value": ""
+    },
+    "webhook": {
+      "description": "This determines whether you send webhooks after purchases or not (true or false)",
+      "value": ""
+    },
+    "xsollausername": {
+      "description": "Username/email for Xsolla",
+      "value": ""
+    },
+    "xsollapassword": {
+      "description": "Password for Xsolla",
+      "value": ""
+    },
+    "purchasebotwebhookurl": {
+      "description": "The url of the webhook, purchase requests are sent to",
+      "value": ""
+    },
+    "justtoletyouknowwebhookurl": {
+      "description": "The url of the webhook, admin requests are sent to",
+      "value": ""
+    },
+    "gmailemail": {
+      "description": "The gmail email used for sending emails after purchases",
+      "value": ""
+    },
+    "gmailpass": {
+      "description": "The gmail password used for sending emails after purchases",
+      "value": ""
+    },
+    "giftcardticketwebhookurl": {
+      "description": "The url of the webhook, giftcard ticket request details are sent to",
+      "value": ""
+    },
+    "loginwebhookurl": {
+      "description": "The url of the webhook, giftcard ticket request details are sent to",
+      "value": ""
+    },
+    "giftcardtickethandlerurl": {
+      "description": "The url the requests are sent to for eval as well as making status page",
+      "value": ""
+    },
+    "confirmation": {
+      "description": "I confirm that my webhook my username and password for email and repl are all set up for this to work (true or false)",
+      "value": "true"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "Start": "echo Initiating Server."
+      }
+    }
+  }
+}
